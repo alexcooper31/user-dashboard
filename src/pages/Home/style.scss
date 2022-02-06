@@ -1,0 +1,18 @@
+.container {
+  width: calc(100vw - 40px);
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  width: 1268px;
+}
+
+.tableHeader {
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}

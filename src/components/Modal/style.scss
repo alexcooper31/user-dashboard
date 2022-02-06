@@ -1,0 +1,28 @@
+.modalCard {
+  position: absolute;
+  top: 10%;
+  left: calc(50% - 200px);
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modalTitle {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.modalContent {
+  padding: 20px;
+}
+
+.modalControl {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid lightgray;
+}
