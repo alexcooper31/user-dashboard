@@ -31,18 +31,18 @@ const Home = (props: HomeProps) => {
     setEditUserModal(true)
     const getCurrentUser = props.users.find((user) => user.id === id);
     setCurrentUser(getCurrentUser);
-  }, [currentUser, props.users])
+  }, [props.users])
 
   const deleteUser = useCallback((id: number) => {
     setDeleteUserModal(true)
     const getCurrentUser = props.users.find((user) => user.id === id);
     setCurrentUser(getCurrentUser);
-  }, [])
+  }, [props.users])
 
   const confirmDeletion = useCallback(() => {
     props.deleteUser(currentUser! && currentUser.id);
     setDeleteUserModal(false)
-  }, [currentUser]);
+  }, [props, currentUser]);
 
   return (
     <div className='container'>
