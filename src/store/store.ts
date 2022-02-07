@@ -28,7 +28,7 @@ const rootReducer = (state = initialState, action: DashboardAction) => {
       };
 
     case 'DELETE_USER':
-      const updatedArr = state.users.pop();
+      const updatedArr = state.users;
       return {
         ...state,
         users: updatedArr as User[],
